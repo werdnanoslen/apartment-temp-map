@@ -1,0 +1,16 @@
+# This service allows the python script to run at boot time.
+# That way, all I have to do is unplug, move to another location, and plug it back in.
+# First, add this file to /lib/systemd/system/
+# Then reload with `systemctl daemon-reload`
+# Finally enable with `systemctl enable onboot.service`
+
+[Unit]
+Description=Service to run on boot
+
+[Service]
+TimeoutStartSec=1
+ExecStart=/usr/bin/python /home/root/edison.py
+Environment="HOME=/home/root"
+
+[Install]
+WantedBy=multi-user.target
