@@ -12,3 +12,5 @@ I ran the python script on an Edison using a Grove shield to collect temp and li
 **Light**:
 
 <img alt="box plot of light data" src="https://github.com/werdnanoslen/apartment-temp-map/blob/master/box-plot-light.png" height="500px" />
+
+Credit to [Manasvi Lalwani](https://github.com/manasvil) for building these Tableau presentations <3
